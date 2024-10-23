@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul ,
+ol ,
+li {
+    padding: 0;  /* apparently these are uncessary since we already set padding and margin to 0 for all elements with * selector */
+    margin: 0;
+    list-style-type: none;  /* removes the bullets from list elements */
+}
+
+a {
+    text-decoration: none;  /* removes the underlines below links */
+    color: black;
+}
+
+.henny-penny-regular {
+    font-family: "Henny Penny", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: rgb(206, 206, 206);
+    flex: 0 1 auto;   /* makes header to take only that much height as it's content requires */
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.6);
+}
+
+.github {
+    margin-right: 1.5rem;
+}
+
+main {
+    flex: 1;  /* main has grow set to 1, so it grows and fills up the remaining space */
+}
+
+footer {
+    background-color: #f0f0f0;
+    flex: 0 1 auto;  /* makes footer to take only that much height as it's content requires */
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerText {
+    /* font-family: "Henny Penny" , serif; */ /* used the .henny-penny-regular class instead */
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    text-shadow: 0rem 2px 18px red;  /* the text looks so cool */
+}
