@@ -42,12 +42,44 @@ header {
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.6);
 }
 
+.headerText {
+    /* font-family: "Henny Penny" , serif; */ /* used the .henny-penny-regular class instead */
+    font-size: 1.7rem;
+    margin-left: 1rem;
+    text-shadow: 0rem 2px 1px rgb(250, 0, 0);  /* the text looks so cool */
+}
+
 .github {
     margin-right: 1.5rem;
 }
 
 main {
     flex: 1;  /* main has grow set to 1, so it grows and fills up the remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+h3 {
+    text-align: center;
+}
+
+.container {
+    border: 0.25rem solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.divContainer {
+    display: flex;
 }
 
 footer {
@@ -57,11 +89,5 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.headerText {
-    /* font-family: "Henny Penny" , serif; */ /* used the .henny-penny-regular class instead */
-    font-size: 1.7rem;
-    margin-left: 1rem;
-    text-shadow: 0rem 2px 18px red;  /* the text looks so cool */
+    font-size: 1.1rem;
 }
