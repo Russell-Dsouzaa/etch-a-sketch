@@ -82,6 +82,16 @@ h3 {
     display: flex;
 }
 
+.div {
+    border: 1px solid lightblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div:hover {
+    border: 1px solid white;
+}
+
 footer {
     background-color: #f0f0f0;
     flex: 0 1 auto;  /* makes footer to take only that much height as it's content requires */
