@@ -1,5 +1,5 @@
 ## Etch-a-Sketch
-![Sketch-Pad](./images/meta.jpeg)  <!-- generate on freepik.com --> 
+<img src = "./images/meta.jpeg" width = "200px" height = "200px">  <!-- generate on freepik.com --> 
 
 <br><br>
 
